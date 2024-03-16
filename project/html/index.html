@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PelisAlquiler.com</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../html/index.html"><img src="../images/logo.png" alt="Logo" id="logo"></a>
+            <div>
+                <a href="http://localhost:3000/film">Peliculas</a>
+                <a href="http://localhost:3000/category">Genero pelicula</a>
+                <a href="../html/sales.html" id="cart"><img src="../images/carrocompras.png" alt=""><span
+                        id="cuenta-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="peliculas-container">
+            <input type="search" id="search" placeholder="Busca una pelicula" />
+        </section>
+        <div id="div1">
+            <p>Pelicula</p>
+            <select>
+                <option>Titulo</option>
+                <option>Categoria</option>
+                <option>Actor</option>
+                <option>Idioma</option>
+            </select>
+        </div>
+        <div id="div2">
+            <p>Precio</p>
+            <input type="text" id="precio" class="caja" href="http://localhost:3000/replacement_cost">
+        </div>
+        <div id="div3">
+            <p>Cantidad</p>
+            <input type="text" id="cantidad" class="caja">
+        </div>
+        </thead>
+
+        <button type="button" name="button" id="button" onclick="agregar()">Agregar</button>
+    </main>
+    <div class="results-container">
+        <section>
+            <table id="results">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <p>Consulta de creacion de este codigo. <a href="https://youtube.com/@puntoJson" target="_blank">puntoJson</a>
+        </p>
+        <p>Ejemplo de una pagina.<a href="https://youtu.be/lduIpYA66mM" target="_blank">Entrá acá</a></p>
+    </footer>
+    <script src="../data/database1.js" defer></script>
+    <script src="../javascripts/cartService.js" defer></script>
+    <script src="../data/index1.js" defer></script>
+    <script src="../data/script.js"></script>
+</body>
+
+</html>

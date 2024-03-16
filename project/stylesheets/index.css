@@ -1,0 +1,80 @@
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+/* Productos home*/
+.peliculas-container {
+    margin: 25px 0;
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.peliculas-container input [type="search"] {
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    width: 40%;
+
+}
+
+.tarjeta-producto {
+    background-color: var(--color-acento-claro);
+    text-align: center;
+    padding: 10px;
+    max-width: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: 200ms;
+}
+
+.tarjeta-producto:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    translate: 0px -5px;
+}
+
+.tarjeta-producto img {
+    max-width: 100%;
+    aspect-ratio: 1.5;
+}
+
+.precio {
+    font-weight: 600;
+}
+
+.tarjeta-producto button {
+    font-size: larger;
+    background-color: var(--color-acento);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    border: unset;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(221, 221, 221);
+}
+
+table tr td {
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.results-container {
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 8px;
+}

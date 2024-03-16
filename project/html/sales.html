@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PelisAlquiler.com</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/sales.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="../images/carrocompras.png" alt="Logo" id="logo"></a>
+            <div>
+                <a href="#">Peliculas</a>
+                <a href="#">Inventario</a>
+                <a href="../html/sales.html" id="cart"><img src="./img/iconos/shopping-cart.png" alt=""><span
+                        id="cuenta-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p id="carrito-vacio">Ups! El carrito está vacío, <a href="../html/index.html">elige algunas peliculas</a></p>
+        <section id="cart-container">
+        </section>
+        <section id="totales">
+            <p>Total Peliculas: <span id="cantidad">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Reiniciar</button>
+        </section>
+    </main>
+    <section>
+        <table id="info">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+        </table>
+        <br>
+        <div id="asd">
+            <p>Subtotal</p>
+            <input type="text" id="SubTotal" class="caja">
+        </div>
+        <div>
+            <p>Total</p>
+            <input type="text" id="Total" class="caja">
+        </div>
+    </section>
+
+    <script src="../data/database1.js"></script>
+    <script src="../javascripts/cartService.js"></script>
+    <script src="../javascripts/sales.js"></script>
+</body>
+
+</html>
